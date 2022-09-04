@@ -30,8 +30,24 @@ resetBtn.addEventListener("click", function () {
   }
 });
 
-function showRandomMassage() {
-  const messages = [
+// function showRandomMassage() {
+//   const messages = [
+//     "Yes",
+//     "No",
+//     "I don't know",
+//     "Of Course",
+//     "Indubitably",
+//     "In your dreams",
+//   ];
+//   const message = messages[Math.floor(Math.random() * messages.length)];
+// }
+
+// function resetAnswer() {
+//   resultDiv.innerHTML = "";
+// }
+
+const showRandomMassage = (answer) => {
+  const massage = [
     "Yes",
     "No",
     "I don't know",
@@ -39,9 +55,8 @@ function showRandomMassage() {
     "Indubitably",
     "In your dreams",
   ];
-  const message = messages[Math.floor(Math.random() * messages.length)];
-}
 
-function resetAnswer() {
-  resultDiv.innerHTML = "";
-}
+  const message = messages[Math.floor(math.random() * messages.length)];
+};
+
+const resetAnswer = (clear) => (resultDiv.innerHTML = "");
